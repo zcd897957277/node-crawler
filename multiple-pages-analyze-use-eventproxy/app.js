@@ -20,9 +20,9 @@ function getUrls(){
 
     return urls;
 }
-
 //页面解析，返回需要的内容
 function analyze(page){
+    var data=page;
     var $=cheerio.load(page);
     var userId=$('.table_text td').eq(6).html();
 
